@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+
+        <header> 
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+            <link type="text/css" rel="stylesheet" href="materialize.min.css"  media="screen,projection"/>
+            <!-- Google Fonts -->
+            <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="weather.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <h1 align="center" id="title">Weather Dashboard</h1>
+        </header>
+
+            <body>
+                <div class="row">
+                    <div class="col s3" id="newSearch"><h5>Search for a city</h5>
+                    
+                        <div>
+                            <div class="nav-wrapper">
+                              <form>
+                                <!-- <button id="findCity">Search</button> -->
+                                <div class="input-field">
+                                  <input id="search" type="search" required>
+                                  <label class="label-icon" for="search"><i class="material-icons">search </i></label>
+                                  <i class="material-icons">close</i>
+                                </div>
+
+                              </form>
+                              <!-- Search History -->
+                              <div id="prevSearchlabel"> Recently Searched <hr></div>
+                              <div id="prevSearch"> </div>
+                              <div class="block">
+                                <button id="clear" class="btn">
+                                  Clear History
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                
+                    </div>
+                     
+                    <!-- Main Section; Current weather for default and searched location. -->
+                    <div class="col s9">
+                        <div class="row">
+                            <div class="col s12">
+                              <div class="card white darken-1" id="main">
+                                  <h4 id="currLocation">Location</h4>
+                                  <hr>
+                                    <h6> <span id="currDate"> Date</span> </h6>
+                                    <img id="Icon"> 
+                                    <h6> <span id="currTemperature"> </span> </h6>
+                                    <h6> <span id="currHumidity"> </span> </h6>
+                                    <h6> <span id="currentUV"> </span> </h6>
+                                    <h6> <span id="currWind"> </span> </h6>
+                                  <span class="card-title"></span>
+                            
+                              </div>
+                            </div>
+                          </div>
+
+                        <!-- 5 day forecast section -->
+                        <div class="row">
+                            <h5>5-Day Forecast:</h5>
+                            <div class="col s2" id="day1"></div>
+                            <div class="col s2" id="day2"></div>
+                            <div class="col s2" id="day3"></div>
+                            <div class="col s2" id="day4"></div>
+                            <div class="col s2" id="day5"></div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script type="text/javascript" src="weather3.js"></script>
+                <script type="text/javascript" src="moment.js"></script>
+
+            </body>
+    </html>

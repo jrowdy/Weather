@@ -1,0 +1,45 @@
+#title {
+    background-color: rgb(6, 8, 17);
+    color: rgb(241, 225, 133);
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Satisfy', cursive;
+    animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {text-shadow: 10px 20px 30px #dbe5e7;}
+}
+
+#search {
+    background-color: rgb(226, 200, 200);
+    height: 30px;
+}
+#prevSearch {
+    background-color: rgb(226, 226, 183);
+    font-size: 30px;
+}
+#prevSearchlabel{
+    display: block;
+    color: rgb(7, 7, 7);
+    font-size: 17px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#main {
+    padding: 20px;
+}
+
+#location {
+    margin: 0px;
+}
+
+#day1, #day2, #day3, #day4, #day5 {
+    height: 220px;
+    text-align: center;
+    background-color: steelblue;
+    margin: 15px;
+    padding: 3px;
+    border-radius: 5px;
+}
